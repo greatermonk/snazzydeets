@@ -1,6 +1,5 @@
-# Maintainer: Your Name <vedantgade2006@gmail.com>
 pkgname="greatermonk/snazzydeets"
-pkgver=r1.72839 # This will update automatically
+pkgver=r1.72839 
 pkgrel=1
 pkgdesc="Data Structures Library in C++"
 arch=('x86_64')
@@ -24,9 +23,6 @@ build() {
 
 package() {
   cd "$srcdir/snazzydeets"
-  # If you don't have a strict "install" target in CMake, 
-  # you might manually copy files.
-  # Example: copy executables to /usr/bin/
   install -Dm755 build/ds_graphs "$pkgdir/usr/bin/ds_graphs"
   install -Dm755 build/ds_graphs "$pkgdir/usr/bin/ds_maps"
   install -Dm755 build/ds_graphs "$pkgdir/usr/bin/ds_linked_lists"
