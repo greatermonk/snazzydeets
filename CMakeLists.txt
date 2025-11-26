@@ -12,7 +12,7 @@ set(MODULES
 )
 
 foreach(mod ${MODULES})
-       file(GLOB SRC_FILES "${mod}/*.hpp")
+       file(GLOB SRC_FILES "${mod}/*.cpp")
 
        if (SRC_FILES)
           add_executable(${mod}_run ${SRC_FILES})
