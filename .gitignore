@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Prerequisites
 *.d
 
@@ -39,3 +40,12 @@
 
 # debug information files
 *.dwo
+=======
+build/
+.vscode/
+*.o
+*.exe
+*.out
+__pycache__/
+.DS_Store
+>>>>>>> a226192 (Committed all files of the project)

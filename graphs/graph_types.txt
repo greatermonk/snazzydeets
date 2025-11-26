@@ -1,0 +1,13 @@
+Types of Graphs:
+
+- Null Graph
+- Trivial Graph
+- Un-directed Graph
+- Directed Graph
+- Connected Graph
+- Disconnected Graph
+- Complete Graph
+- Cyclic Graph
+- Directed Acyclic graph
+- Bipartite Graph
+- Weighted Graph

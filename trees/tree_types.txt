@@ -1,0 +1,11 @@
+Types of Trees:
+
+Binary Search Trees
+
+AVL Trees
+B-Tree
+Red-Black Tree
+Trie
+Segment Tree
+Binary Indexed Tree
+n-ary trees.

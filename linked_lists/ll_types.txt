@@ -1,0 +1,66 @@
+Singly Linked List
+Doubly Linked list
+Singly Linked list
+Doubly Circular Linked list
+
+
+Methods:
+
+Adding Elements:
+i) addFirst(E e): Inserts the specified element at the beginning of the list.
+ii) addLast(E e): Appends the specified element to the end of the list.
+iii) add(int index, E element): Inserts the specified element at the specified position in this list.
+iv) offer(E e): Adds the specified element as the tail (last element) of this list.
+
+Removing Elements:
+i)removeFirst(): Removes and returns the first element from this list.
+ii)removeLast(): Removes and returns the last element from this list.
+iii)remove(int index): Removes the element at the specified position in this list.
+iv)remove(Object o): Removes the first occurrence of the specified element from this list, if it is present.
+
+
+Accessing Elements:
+i)getFirst(): Returns the first element in this list.
+ii)getLast(): Returns the last element in this list.
+iii)get(int index): Returns the element at the specified position in this list.
+
+
+Searching Elements:
+i)indexOf(Object o): Returns the index of the first occurrence of the specified element in this list, or -1 if the list does not contain the element.
+ii)lastIndexOf(Object o): Returns the index of the last occurrence of the specified element in this list, or -1 if the list does not contain the element.
+iii)contains(Object o): Returns true if this list contains the specified element.
+
+Utility Methods:
+i)isEmpty(): Returns true if this list contains no elements.
+ii)size(): Returns the number of elements in this list.
+iii)clear(): Removes all of the elements from this list.
+iv)iterator(): Returns an iterator over the elements in this list in proper sequence.
+v)listIterator(int index): Returns a list-iterator of the elements in this list (in proper sequence), starting at the specified position in the list.
+
+Operations:
+
+A)Traversal:
+This operation involves visiting each node in the linked list sequentially, typically starting from the head, to access or process the data stored within each node.
+
+B)Insertion:
+At the beginning: Adding a new node as the new head of the linked list.
+At the end: Appending a new node to the end of the linked list.
+At a specific position: Inserting a new node at a designated position within the linked list, often after a specific node or at a given index.
+
+C)Deletion:
+From the beginning: Removing the head node of the linked list.
+From the end: Removing the last node of the linked list.
+At a specific position: Deleting a node at a designated position within the linked list, often by its value or at a given index.
+
+D)Searching:
+This operation involves iterating through the linked list to find a node containing a specific data value (key).
+
+E)Updating (Modification):
+Modifying the data value of an existing node in the linked list. This often involves first searching for the target node and then changing its data.
+
+F)Reversal:
+Changing the order of nodes in the linked list so that the last node becomes the new head and the first node becomes the new tail.
+
+G)Sorting:
+Arranging the nodes of the linked list in a specific order based on their data values (e.g., ascending or descending). This can be achieved using various sorting algorithms adapted for linked lists.
+

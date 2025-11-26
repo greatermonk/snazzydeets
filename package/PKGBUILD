@@ -1,0 +1,34 @@
+# Maintainer: Your Name <vedantgade2006@gmail.com>
+pkgname="greatermonk/snazzydeets"
+pkgver=r1.72839 # This will update automatically
+pkgrel=1
+pkgdesc="Data Structures Library in C++"
+arch=('x86_64')
+url='https://github.com/greatermonk/snazzydeets'
+license=('MIT')
+depends=('gcc-libs')
+makedepends=('git' 'cmake')
+source=("git+$url")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "$srcdir/snazzydeets"
+  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+build() {
+  cd "$srcdir/snazzydeets"
+  cmake -B build -S . -DCMAKE_INSTALL_PREFIX=/usr
+  cmake --build build
+}
+
+package() {
+  cd "$srcdir/snazzydeets"
+  # If you don't have a strict "install" target in CMake, 
+  # you might manually copy files.
+  # Example: copy executables to /usr/bin/
+  install -Dm755 build/ds_graphs "$pkgdir/usr/bin/ds_graphs"
+  install -Dm755 build/ds_graphs "$pkgdir/usr/bin/ds_maps"
+  install -Dm755 build/ds_graphs "$pkgdir/usr/bin/ds_linked_lists"
+  install -Dm755 build/ds_trees "$pkgdir/usr/bin/ds_trees"
+}
