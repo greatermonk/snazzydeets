@@ -24,10 +24,10 @@ The core is an array of "buckets" or "slots."
 ## **Hash Function**:
 A function that takes a key and converts it into an integer that corresponds to an index in the array.
 
-## **Collisions: **
+## **Collisions:**
 When two different keys hash to the same index, it's called a collision. This is a normal and expected event. The two most common ways to handle it are:
 
-## **Separate Chaining: **
+## **Separate Chaining:**
 Each array bucket holds a pointer to another data structure (often a linked list) that stores all the key-value pairs that hashed to that same index.
 
 
@@ -42,7 +42,7 @@ If a bucket is full, the new key-value pair is stored in the next available buck
 
 - Database Indexing: Helps databases quickly find data records without scanning the entire table.
 
-## **Key Features: **
+## **Key Features:**
 Unbeatable average-case speed. Lookups, insertions, and deletions are typically O(1) (constant time), meaning the time they take is independent of the map's size. However, it does not maintain any order.
 
 
